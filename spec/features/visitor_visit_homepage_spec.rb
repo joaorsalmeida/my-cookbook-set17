@@ -10,11 +10,10 @@ feature 'Visitor visit homepage' do
 
   scenario 'and view recipe' do
     #cria os dados necessários
-    # create = new + save
-    recipe = Recipe.new(title: 'Bolo de cenoura', recipe_type: 'Sobremesa',
+    recipe = Recipe.create(title: 'Bolo de cenoura', recipe_type: 'Sobremesa',
                           cuisine: 'Brasileira', difficulty: 'Médio', 
                           cook_time: 60)
-    recipe.save
+
     # simula a ação do usuário
     visit root_path
 
