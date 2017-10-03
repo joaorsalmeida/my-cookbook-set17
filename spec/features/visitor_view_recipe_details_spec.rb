@@ -40,6 +40,7 @@ feature 'Visitor view recipe details' do
     click_on 'Voltar'
 
     # expectativa da rota atual
+    # expect(page).to have_link('Voltar', href: root_path)
     expect(current_path).to eq(root_path)
   end
 end
